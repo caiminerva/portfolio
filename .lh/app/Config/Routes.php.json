@@ -1,0 +1,26 @@
+{
+    "sourceFile": "app/Config/Routes.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1706852218986,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706852638166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n \n /**\n  * @var RouteCollection $routes\n  */\n-$routes->get('/', 'Home::index');\n+$routes->get('/', 'PortfolioController::index');\n $routes->get('about', 'PortfolioController::about');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1706852766893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,8 @@\n /**\n  * @var RouteCollection $routes\n  */\n $routes->get('/', 'PortfolioController::index');\n-$routes->get('about', 'PortfolioController::about');\n\\ No newline at end of file\n+$routes->get('about', 'PortfolioController::about');\n+$routes->get('about', 'PortfolioController::resume');\n+$routes->get('about', 'PortfolioController::facts');\n+$routes->get('about', 'PortfolioController::contacts');\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1706852218986,
+            "name": "Commit-0",
+            "content": "<?php\n\nuse CodeIgniter\\Router\\RouteCollection;\n\n/**\n * @var RouteCollection $routes\n */\n$routes->get('/', 'Home::index');\n$routes->get('about', 'PortfolioController::about');"
+        }
+    ]
+}

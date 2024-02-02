@@ -1,0 +1,38 @@
+{
+    "sourceFile": "app/Controllers/PortfolioController.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1706851992763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1706852108082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n     }\n \n     public function about()\n     {\n-        //\n+        return view('about');\n     }\n }\n"
+                },
+                {
+                    "date": 1706852576980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,17 @@\n class PortfolioController extends BaseController\n {\n     public function index()\n     {\n-        //\n+        return view('index');\n     }\n \n     public function about()\n     {\n         return view('about');\n     }\n+\n+    public function resume()\n+    {\n+        return view('about');\n+    }\n }\n"
+                },
+                {
+                    "date": 1706852663757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,5 @@\n     public function about()\n     {\n         return view('about');\n     }\n-\n-    public function resume()\n-    {\n-        return view('about');\n-    }\n }\n"
+                },
+                {
+                    "date": 1706852858031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,20 @@\n     public function about()\n     {\n         return view('about');\n     }\n+\n+    public function resume()\n+    {\n+        return view('resume');\n+    }\n+\n+    public function facts()\n+    {\n+        return view('facts');\n+    }\n+\n+    public function contacts()\n+    {\n+        return view('contacts');\n+    }\n }\n"
+                },
+                {
+                    "date": 1706852872226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     {\n         return view('facts');\n     }\n \n-    public function contacts()\n+    public function contact()\n     {\n-        return view('contacts');\n+        return view('contact');\n     }\n }\n"
+                }
+            ],
+            "date": 1706851992763,
+            "name": "Commit-0",
+            "content": "<?php\n\nnamespace App\\Controllers;\n\nuse App\\Controllers\\BaseController;\nuse CodeIgniter\\HTTP\\ResponseInterface;\n\nclass PortfolioController extends BaseController\n{\n    public function index()\n    {\n        //\n    }\n\n    public function about()\n    {\n        //\n    }\n}\n"
+        }
+    ]
+}
