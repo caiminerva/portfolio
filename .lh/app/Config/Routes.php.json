@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1706852218986,
@@ -16,6 +16,14 @@
                 {
                     "date": 1706852766893,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,8 @@\n /**\n  * @var RouteCollection $routes\n  */\n $routes->get('/', 'PortfolioController::index');\n-$routes->get('about', 'PortfolioController::about');\n\\ No newline at end of file\n+$routes->get('about', 'PortfolioController::about');\n+$routes->get('about', 'PortfolioController::resume');\n+$routes->get('about', 'PortfolioController::facts');\n+$routes->get('about', 'PortfolioController::contacts');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707098088133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n  * @var RouteCollection $routes\n  */\n $routes->get('/', 'PortfolioController::index');\n $routes->get('about', 'PortfolioController::about');\n-$routes->get('about', 'PortfolioController::resume');\n-$routes->get('about', 'PortfolioController::facts');\n-$routes->get('about', 'PortfolioController::contacts');\n\\ No newline at end of file\n+$routes->get('resume', 'PortfolioController::resume');\n+$routes->get('facts', 'PortfolioController::facts');\n+$routes->get('contact', 'PortfolioController::contact');\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1707098744685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+<?php\n+\n+use CodeIgniter\\Router\\RouteCollection;\n+\n+/**\n+ * @var RouteCollection $routes\n+ */\n+$routes->get('/', 'PortfolioController::index');\n+$routes->get('about', 'PortfolioController::about');\n+$routes->get('resume', 'PortfolioController::resume');\n+$routes->get('facts', 'PortfolioController::facts');\n+$routes->get('contact', 'PortfolioController::contact');\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1706852218986,

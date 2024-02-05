@@ -7,6 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'PortfolioController::index');
 $routes->get('about', 'PortfolioController::about');
-$routes->get('about', 'PortfolioController::resume');
-$routes->get('about', 'PortfolioController::facts');
-$routes->get('about', 'PortfolioController::contacts');
+$routes->get('resume', 'PortfolioController::resume');
+$routes->get('facts', 'PortfolioController::facts');
+$routes->get('contact', 'PortfolioController::contact');
